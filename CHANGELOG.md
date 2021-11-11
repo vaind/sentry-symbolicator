@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+### Features
+
+- Use `rust:bullseye-slim` as base image for docker container builder. ([#578](https://github.com/getsentry/symbolicator/pull/578))
+- Use `debian:bullseye-slim` as base image for docker container runner. ([#578](https://github.com/getsentry/symbolicator/pull/578))
+
 ## 0.5.0
 
 ### Features
@@ -7,7 +14,7 @@
 - Support for `external_debug_info` section in wasm-split for external dwarf files. ([#619](https://github.com/getsentry/symbolicator/pull/619))
 - Added windows binaries for `wasm-split` and `symsorter` to releases ([#624](https://github.com/getsentry/symbolicator/pull/624))
 - Also populate the shared cache from existing items in the local cache, not only new ones. ([#648](https://github.com/getsentry/symbolicator/pull/648))
-- Switch minidump processing entirely to `rust-minidump`, this is currently faster, more reliable and produces at least similar quality stacktraces.  Breakpad has been removed as a dependency. ([#723](https://github.com/getsentry/symbolicator/pull/723) [#731](https://github.com/getsentry/symbolicator/pull/731) [#732](https://github.com/getsentry/symbolicator/pull/732))
+- Switch minidump processing entirely to `rust-minidump`, this is currently faster, more reliable and produces at least similar quality stacktraces. Breakpad has been removed as a dependency. ([#723](https://github.com/getsentry/symbolicator/pull/723) [#731](https://github.com/getsentry/symbolicator/pull/731) [#732](https://github.com/getsentry/symbolicator/pull/732))
 
 ### Fixes
 
