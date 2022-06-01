@@ -40,9 +40,13 @@ use super::shared_cache::SharedCacheService;
 ///
 /// In case a symbolic update increased its own internal format version, bump the
 /// cficache file version as described above, and update the static assertion.
+///
+/// # Version History
+///
+/// - `1`: Generate higher fidelity CFI for Win-x64 binaries.
 const CFICACHE_VERSIONS: CacheVersions = CacheVersions {
-    current: 0,
-    fallbacks: &[],
+    current: 1,
+    fallbacks: &[0],
 };
 static_assert!(symbolic_minidump::cfi::CFICACHE_LATEST_VERSION == 2);
 
